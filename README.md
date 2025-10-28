@@ -187,8 +187,6 @@ huggingface-cli download lightx2v/Autoencoders lightvaew2_1.pth \
 
 High-performance configuration using 4-step distilled model + LightVAE optimized decoder.
 
-![Wan2.1 LightVAE](example/imgs/wan21_lightvae.png)
-
 **Workflow File**: [`example/workflows/wan2.1_I2V_4step_fp8_lightvae.json`](example/workflows/wan2.1_I2V_4step_fp8_lightvae.json)
 
 ### Wan2.2 TI2V + LightVAE

@@ -187,8 +187,6 @@ huggingface-cli download lightx2v/Autoencoders lightvaew2_1.pth \
 
 使用 4-step 蒸馏模型 + LightVAE 优化解码器的高性能配置。
 
-![Wan2.1 LightVAE](example/imgs/wan21_lightvae.png)
-
 **工作流文件**: [`example/workflows/wan2.1_I2V_4step_fp8_lightvae.json`](example/workflows/wan2.1_I2V_4step_fp8_lightvae.json)
 
 ### Wan2.2 TI2V + LightVAE
