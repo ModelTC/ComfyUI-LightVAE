@@ -150,7 +150,6 @@ huggingface-cli download lightx2v/Autoencoders lightvaew2_1.pth \
 
 ### 1. LightX2V VAE Decoder Loader
 ![VAE Loader](example/imgs/vae_loader.png)
-Loads VAE decoder models.
 
 **Input Parameters:**
 - `vae_filename` - VAE model filename (automatically lists from `./models/vae/`)
@@ -167,8 +166,7 @@ Loads VAE decoder models.
 
 
 ### 2. LightX2V VAE Decode
-![VAE Decode](example/imgs/vae_decoder.png)
-Decodes latent to video frames.
+![VAE Decode](example/imgs/vae_decode.png)
 
 **Input Parameters:**
 - `vae` - VAE object from Loader

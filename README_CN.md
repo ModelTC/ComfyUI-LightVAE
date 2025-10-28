@@ -150,7 +150,6 @@ huggingface-cli download lightx2v/Autoencoders lightvaew2_1.pth \
 
 ### 1. LightX2V VAE Decoder Loader
 ![VAE Loader](example/imgs/vae_loader.png)
-加载 VAE 解码器模型。
 
 **输入参数:**
 - `vae_filename` - VAE 模型文件名（从 `./models/vae/` 目录自动列出）
@@ -167,8 +166,7 @@ huggingface-cli download lightx2v/Autoencoders lightvaew2_1.pth \
 
 
 ### 2. LightX2V VAE Decode
-![VAE Decode](example/imgs/vae_decoder.png)
-解码 latent 到视频帧。
+![VAE Decode](example/imgs/vae_decode.png)
 
 **输入参数:**
 - `vae` - 来自 Loader 的 VAE 对象
