@@ -74,12 +74,20 @@ LightX2V 团队对 VAE 进行了深度优化，衍生出两大系列：**LightVA
 
 ### 1. 安装 LightX2V 依赖
 
+# vae依赖项windows示例
+...comfy\python_embeded\python.exe -s -m pip install -r requirements.txt  
+
+
 ```bash
 # 克隆 LightX2V 仓库
 git clone https://github.com/ModelTC/LightX2V
 cd LightX2V
 
 python setup_vae.py install
+# windows示例
+...comfy\python_embeded\python.exe setup_vae.py install
+
+
 ```
 
 ### 2. 安装 ComfyUI-WanVideoWrapper
