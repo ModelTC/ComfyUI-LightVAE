@@ -1,0 +1,6 @@
+torch>=2.0.0
+numpy>=1.20.0
+einops>=0.6.0
+loguru>=0.6.0
+imageio
+

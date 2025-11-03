@@ -16,7 +16,7 @@ class VAEDecoderLoader:
         vae_default_dir = "./models/vae/"
         return {
             "required": {
-                "vae_filename": (os.listdir(vae_default_dir) ,{"default": "Wan2.1_VAE.safetensors"}),
+                "vae_filename": (folder_paths.get_filename_list("vae") ,{"default": "Wan2.1_VAE.safetensors"}),
                 "dtype": (["bfloat16", "float16", "float32"], {"default": "bfloat16"}),
                 "device": (["cuda", "cpu"], {"default": "cuda"}),
             }
@@ -34,9 +34,8 @@ class VAEDecoderLoader:
             "float32": torch.float32
         }
         vae_name = os.path.splitext(vae_filename)[0]
-        vae_default_dir = "./models/vae/"
         torch_dtype = dtype_map[dtype]
-        vae_path = os.path.join(vae_default_dir, vae_filename)
+        vae_path = folder_paths.get_full_path("vae", vae_filename)
         
         if not os.path.exists(vae_path):
             raise FileNotFoundError(f"VAE model not found: {vae_path}")

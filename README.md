@@ -74,12 +74,19 @@ The LightX2V team has deeply optimized VAE, creating two major series: **LightVA
 
 ### 1. Install LightX2V Dependencies
 
+# vae requirements windows example 
+...comfy\python_embeded\python.exe -s -m pip install -r requirements.txt  
+
+
 ```bash
 # Clone LightX2V repository
 git clone https://github.com/ModelTC/LightX2V
 cd LightX2V
 
 python setup_vae.py install
+# windows example
+...comfy\python_embeded\python.exe setup_vae.py install
+
 ```
 
 ### 2. Install ComfyUI-WanVideoWrapper
